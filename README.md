@@ -1,16 +1,23 @@
 # rick_and_morty
 
-A new Flutter project.
+## Description
 
-## Getting Started
+This is a documentation of the **rick_and_morty** project, which includes a mobile application.
 
-This project is a starting point for a Flutter application.
+## Project architecture
 
-A few resources to get you started if this is your first Flutter project:
+The project follows the **Clean architecture with MVVM** architecture with a **feature-first** approach.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Project Statistics
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Lines of code**: 314
+- **Files**: 10
+- **Folders**: 17
+- **Screens**: 1
+- **Packages**: 4
+- **Average lines per file**: 31
+
+## Text Editor Settings
+
+- **Editor**: VSCode
+- **Dart line length**: 120 characters
