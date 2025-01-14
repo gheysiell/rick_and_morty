@@ -16,6 +16,12 @@ dependencies:
   provider: ^6.1.2
   http: ^1.2.2
   html: ^0.15.5
+  google_fonts: ^6.2.0
+  photo_view: ^0.15.0
+  cached_network_image: ^3.4.0
+  connectivity_plus: ^6.1.1
+  flutter_native_splash: ^2.4.0
+  flutter_launcher_icons: ^0.14.2
 
 dev_dependencies:
   flutter_test:
@@ -23,6 +29,39 @@ dev_dependencies:
   
   flutter_lints: ^3.0.0
 
-flutter:
-  
+flutter:  
   uses-material-design: true 
+  assets:
+    - assets/images/
+
+flutter_native_splash:
+  color: "#FF665B"
+  image: assets/images/icon_splash.png
+
+  android_12:
+    image: assets/images/icon_splash.png
+    icon_background_color: "#ffffff"    
+
+  web: false
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/icon.png"
+  adaptive_icon_foreground: "assets/images/icon.png"
+  adaptive_icon_background: "#ffffff"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/images/icon.png"
+    background_color: "#ffffff"
+    theme_color: "#ffffff"
+  windows:
+    generate: true
+    image_path: "assets/images/icon.png"
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "assets/images/icon.png"

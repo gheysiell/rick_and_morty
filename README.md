@@ -1,5 +1,8 @@
 # rick_and_morty
 
+| ![Home Screen](https://raw.githubusercontent.com/gheysiell/images/main/rick_and_morty_screen.png) | ![Details Screen](https://raw.githubusercontent.com/gheysiell/images/main/rick_and_morty_details_screen.png) |
+|:---:|:---:|
+
 ## Description
 
 This is a documentation of the **rick_and_morty** project, which includes a mobile application.
@@ -10,12 +13,12 @@ The project follows the **Clean architecture with MVVM** architecture with a **f
 
 ## Project Statistics
 
-- **Lines of code**: 314
-- **Files**: 10
-- **Folders**: 17
-- **Screens**: 1
-- **Packages**: 4
-- **Average lines per file**: 31
+- **Lines of code**: 1,244
+- **Files**: 26
+- **Folders**: 23
+- **Screens**: 2
+- **Packages**: 10
+- **Average lines per file**: 48
 
 ## Text Editor Settings
 

@@ -1,8 +1,9 @@
 import 'package:rick_and_morty/features/characters/domain/entities/characters_entity.dart';
+import 'package:rick_and_morty/utils/format_functions.dart';
 
 class CharacterDto {
   int id;
-  String name, status, species, type, gender, image, created;
+  String name, status, species, type, gender, imageUrl, created;
 
   CharacterDto({
     required this.id,
@@ -11,33 +12,20 @@ class CharacterDto {
     required this.species,
     required this.type,
     required this.gender,
-    required this.image,
+    required this.imageUrl,
     required this.created,
   });
 
   factory CharacterDto.fromMap(Map<String, dynamic> map) {
     return CharacterDto(
-      id: map['id'],
-      name: map['name'],
-      status: map['status'],
-      species: map['species'],
-      type: map['type'],
-      gender: map['gender'],
-      image: map['image'],
-      created: map['created'],
-    );
-  }
-
-  factory CharacterDto.fromEntity(Character character) {
-    return CharacterDto(
-      id: character.id,
-      name: character.name,
-      status: character.status,
-      species: character.species,
-      type: character.type,
-      gender: character.gender,
-      image: character.image,
-      created: character.created,
+      id: FormatFunctions.safeParseInt(map['id']),
+      name: FormatFunctions.safeParseString(map['name']),
+      status: FormatFunctions.safeParseString(map['status']),
+      species: FormatFunctions.safeParseString(map['species']),
+      type: FormatFunctions.safeParseString(map['type']),
+      gender: FormatFunctions.safeParseString(map['gender']),
+      imageUrl: FormatFunctions.safeParseString(map['image']),
+      created: FormatFunctions.safeParseString(map['created']),
     );
   }
 
@@ -49,7 +37,7 @@ class CharacterDto {
       species: species,
       type: type,
       gender: gender,
-      image: image,
+      imageUrl: imageUrl,
       created: created,
     );
   }

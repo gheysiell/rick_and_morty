@@ -1,5 +1,5 @@
-import 'package:rick_and_morty/features/characters/domain/entities/characters_entity.dart';
+import 'package:rick_and_morty/features/characters/domain/entities/characters_response_entity.dart';
 
 abstract class CharactersRepository {
-  Future<List<Character>> getCharacters();
+  Future<CharacterResponse> getCharacters(String search, int page);
 }
